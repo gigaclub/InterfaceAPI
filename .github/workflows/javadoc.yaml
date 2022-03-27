@@ -1,16 +1,27 @@
-name: Deploy Javadoc
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+
+name: Automatically Deploy Javadocs
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy JavaDoc 🚀
-        uses: MathieuSoysal/Javadoc-publisher.yml@v2.0.3
+      - name: Checkout ️
+        uses: actions/checkout@v2.3.1
+      - name: Build Javadocs
+        run: |
+          echo "Building javadocs with gradle"
+          ./gradlew javadoc
+          echo "Moving to javadocs directory:"
+          cd build/docs/javadoc/
+          echo "Creating .nojekyll to have Github pages deploy html as is:"
+          touch .nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          java-version: 17
+          branch: javadocs # The branch the action should deploy to.
+          folder: build/docs/javadoc/ # The folder the action should deploy.

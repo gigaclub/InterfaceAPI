@@ -1,0 +1,13 @@
+ext.pathMapper = [:]
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/kotlin-stdlib-jdk8.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/kotlin-stdlib-jdk8.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-tooling-extension-impl.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-tooling-extension-impl.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-tooling-extension-api.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-tooling-extension-api.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-api-impldep-7.1.1-sp2.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/plugins/gradle/lib/gradle-api-impldep-7.1.1-sp2.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/external-system-rt.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/external-system-rt.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25.plugins/Kotlin/lib/kotlin-plugin.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25.plugins/Kotlin/lib/kotlin-plugin.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/util.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/util.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/3rd-party.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/3rd-party.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25.plugins/Minecraft Development/lib/MinecraftDev-2021.3-1.5.18-gradle-tooling-extension.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25.plugins/Minecraft Development/lib/MinecraftDev-2021.3-1.5.18-gradle-tooling-extension.jar")
+ext.pathMapper.put("C:/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/3rd-party-rt.jar", "/mnt/c/Users/kevin/AppData/Local/JetBrains/Toolbox/apps/IDEA-C/ch-0/213.7172.25/lib/3rd-party-rt.jar")
+ext.pathMapper.put("<<target java executable path>>", "/home/kevin/.jdks/corretto-17.0.2/bin/java")
+ext.mapPath = { path -> pathMapper.get(path) ?: path }
